@@ -1,0 +1,21 @@
+# Build results
+[Dd]ebug/
+[Uu][Aa][Tt]/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio 2015 cache/options directory
+.vs/
+Sources/GRT_Sourses/GRT_Sourses/
+*.bak
+Vtb.FrontOffice.RR.Api/Vtb.FrontOffice.RR.Api.xml
+Vtb.FrontOffice.RR.nsd.boimport/src/
+/Vtb.FrontOffice.RR.Monitoring/Vtb.FrontOffice.RR.Monitoring.csproj.user
+Vtb.FrontOffice.RR.Auth/userSecretSet.bat
+*.diagsession
+/Packages
+Vtb.FrontOffice.RR.Nsd.Import/testSrc/
+/Vtb.FrontOffice.RR.Client/Content/buildInfo.json
+/Vtb.FrontOffice.RR.Client.Admin/Content/buildInfo.json
+/Vtb.FrontOffice.RR.Client.Nsd/Content/buildInfo.json
