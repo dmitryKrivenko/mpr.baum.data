@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MPR.Baum.Data.Section">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Building" Type="MPR.Baum.Data.Building" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="1.258" />
+        <Point X="14.062" Y="1.258" />
+        <Point X="14.062" Y="2.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAEQAAA=</HashCode>
+      <FileName>Section.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Building" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MPR.Baum.Data.Apartment">
+    <Position X="7.25" Y="0.5" Width="1.25" />
+    <AssociationLine Name="Owners" Type="MPR.Baum.Data.Owner" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="1.601" />
+        <Point X="5.5" Y="1.601" />
+        <Point X="5.5" Y="3" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAACIAAAAAAgAAAAAAAAAAAAAAAAAAAAAAYAQAAA=</HashCode>
+      <FileName>Apartment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Section" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Owners" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MPR.Baum.Data.Building">
+    <Position X="13.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAgAAAAAAAAAgAAAAAAAAAAAAAEAAAAEAAAA=</HashCode>
+      <FileName>Building.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MPR.Baum.Data.Owner">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <AssociationLine Name="Apartments" Type="MPR.Baum.Data.Apartment" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.125" Y="3" />
+        <Point X="5.125" Y="1.129" />
+        <Point X="7.25" Y="1.129" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Parkings" Type="MPR.Baum.Data.Parking" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="4.681" />
+        <Point X="5.25" Y="6.43" />
+        <Point X="7.25" Y="6.43" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="StorageRooms" Type="MPR.Baum.Data.StorageRoom" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="4.216" />
+        <Point X="6.625" Y="4.216" />
+        <Point X="6.625" Y="4.178" />
+        <Point X="7.25" Y="4.178" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAABAAAIAgAAAAAAAAAgAAgAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Owner.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Apartments" />
+      <Property Name="Parkings" />
+      <Property Name="StorageRooms" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MPR.Baum.Data.User">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <AssociationLine Name="Owner" Type="MPR.Baum.Data.Owner" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="3.875" />
+        <Point X="4.5" Y="3.875" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Owner" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MPR.Baum.Data.StorageRoom">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Owners" Type="MPR.Baum.Data.Owner" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="7.25" Y="3.587" />
+        <Point X="7" Y="3.587" />
+        <Point X="7" Y="3.648" />
+        <Point X="6" Y="3.648" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Building" Type="MPR.Baum.Data.Building" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="4.195" />
+        <Point X="13.25" Y="4.195" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAABCIAAAAACAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>StorageRoom.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Building" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Owners" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MPR.Baum.Data.Parking">
+    <Position X="7.25" Y="5.25" Width="1.5" />
+    <AssociationLine Name="Building" Type="MPR.Baum.Data.Building" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="6.008" />
+        <Point X="14.344" Y="6.008" />
+        <Point X="14.344" Y="4.623" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Owners" Type="MPR.Baum.Data.Owner" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="5.841" />
+        <Point X="5.625" Y="5.841" />
+        <Point X="5.625" Y="4.681" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAIABCIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Parking.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Building" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Owners" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
